@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-public class MainPageElements {
+public class MainPage {
 
     private final SelenideElement header = $(".main-navbar__section_left"),
                                   footer = $(".footer"),

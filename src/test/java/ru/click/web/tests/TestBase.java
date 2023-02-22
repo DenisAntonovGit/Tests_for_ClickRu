@@ -8,28 +8,26 @@ import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import ru.click.web.config.ProjectConfig;
 import ru.click.web.config.WebDriverConfig;
 import ru.click.web.helpers.Attach;
-import ru.click.web.page.MainPageElements;
+import ru.click.web.page.MainPage;
 
 public class TestBase {
 
-    private static WebDriverConfig config;
-    private static ProjectConfig configuration;
+    protected final MainPage mainPage = new MainPage();
 
     @BeforeAll
     static void beforeAll() {
-        config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
-        configuration = new ProjectConfig();
-        configuration.runConfig(config);
+        WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
+        new ProjectConfig().runConfig(config);
+        Configuration.timeout = 10000;
     }
 
     @BeforeEach
     void beforeEach() {
-        new MainPageElements().openMainPage();
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        mainPage.openMainPage();
     }
 
     @AfterEach
@@ -38,5 +36,6 @@ public class TestBase {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
+        Selenide.closeWebDriver();
     }
 }

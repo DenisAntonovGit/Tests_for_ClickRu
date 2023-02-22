@@ -42,3 +42,41 @@ public class SomeApiTest {
 //                $("#right-top-menu-uname").shouldHave(text("Johnwickenbaum@gmail.com"));
     }
 }
+
+//'prmt=1676466641WyfFWz8OSnO2q3;
+// if=1i;
+// _gcl_au=1.1.628009876.1676466645;
+// last_hided_news=614;
+// SeoPult=4fc1024eqOuO8WrHRnOxJVEAWuGPnHlJ'
+
+//'prmt=1676466641WyfFWz8OSnO2q3;
+// if=1i;
+// _gcl_au=1.1.628009876.1676466645;
+// last_hided_news=614;
+// SeoPult=94675914b1Svx6FpUxFVWA1wlthbLmgd;
+// pp_uid=1668813'
+
+
+//Curl for autorization
+//curl 'https://click.ru/User/Authorization' \
+//  -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+//  -H 'Accept-Language: ru,en;q=0.9' \
+//  -H 'Cache-Control: no-cache' \
+//  -H 'Connection: keep-alive' \
+//  -H 'Content-Type: application/x-www-form-urlencoded' \
+//  -H 'Cookie: prmt=1676466641WyfFWz8OSnO2q3; if=1i; _gcl_au=1.1.628009876.1676466645; last_hided_news=614; SeoPult=4bebaf21KujtXXuolopZTe2CVMoKDhOT; sessions=4bebaf21KujtXXuolopZTe2CVMoKDhOT' \
+//  -H 'DNT: 1' \
+//  -H 'Origin: https://click.ru' \
+//  -H 'Pragma: no-cache' \
+//  -H 'Referer: https://click.ru/' \
+//  -H 'Sec-Fetch-Dest: document' \
+//  -H 'Sec-Fetch-Mode: navigate' \
+//  -H 'Sec-Fetch-Site: same-origin' \
+//  -H 'Sec-Fetch-User: ?1' \
+//  -H 'Upgrade-Insecure-Requests: 1' \
+//  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.0.2940 Yowser/2.5 Safari/537.36' \
+//  -H 'sec-ch-ua: "Not?A_Brand";v="8", "Chromium";v="108", "Yandex";v="23"' \
+//  -H 'sec-ch-ua-mobile: ?0' \
+//  -H 'sec-ch-ua-platform: "macOS"' \
+//  --data-raw 'op=login&recaptcha_token=03AFY_a8UEjM6uwv4EIWKMYaZFQtvZW7PYRNZqUnuASU0YspPA0V9e3FPNa9_ntsGq6Ipntv_Owru9sdbv0F9EL2F-FnqJTR26ArEKD7GOJ5sq7QSG-LORAHtu01jxBhNtivVn8k-2QsmzKhSiIytjBb2v_Y0DdYfC23Gw0Li6fDlZ1B7MzK8zJElHliCnu5jpVDW_fXHcLhWfooKXDdMCmiZYVEtTrPPYIEnsfSf-c2U1f9-c8vlsUAI-ZpeJ0Bl6FnuyxY4a3nXsygikrU08iUlHgwgo84SDYUanjWn9Ga3mrYLck3fRZWLuXEwl1BMiyRYyZ3DUeCAwSUeF_BfrUMmCLotnVURxdFna_rwb7BePoiz0H1tuS4ERATEYSth0jkw3PbBfFVsr8LgpFE2-J0resOhBBjuwCyb1ZnAK96AJSJkOj7pwvGaxGyjk8nnOS3b8Byml0miACgLFYGU9iQrk_2h9ZL8Avn2oNSfyZKhFr7mKVewh8k4qDwBEYS_lAdmHA3p0fuPw7lINdMNkJT8ZUP_EsP_JLErefkxzZWzWaW2vGUAf0kWVBJtJxttw33K_U9zB8oIB&ga_client_id=&uname=Johnwickenbaum%40gmail.com&pass=johnwick111' \
+//  --compressed

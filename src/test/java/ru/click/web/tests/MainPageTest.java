@@ -3,11 +3,11 @@ package ru.click.web.tests;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ru.click.web.page.CalculationPageElements;
-import ru.click.web.page.MainPageElements;
+import ru.click.web.page.MainPage;
 
 public class MainPageTest extends TestBase{
 
-    MainPageElements mainPage = new MainPageElements();
+
     CalculationPageElements calcPage = new CalculationPageElements();
 
     @Test
@@ -29,7 +29,7 @@ public class MainPageTest extends TestBase{
     }
 
 //    В этом поле на сайте есть баг, некорректно рассчитывающий сумму при удалении
-//    значений из полей ввода!
+//    значений из полей ввода! TODO Зафиксировать в Jira
     @Test
     @DisplayName("Проверка работы калькулятора экономии на главной странице")
     public void verifyEffectiveOfClickingCalc() {
