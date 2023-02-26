@@ -2,13 +2,12 @@ package ru.click.web.tests;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import ru.click.web.page.CalculationPageElements;
-import ru.click.web.page.MainPage;
+import ru.click.web.page.CalculationPage;
 
 public class MainPageTest extends TestBase{
 
 
-    CalculationPageElements calcPage = new CalculationPageElements();
+    CalculationPage calcPage = new CalculationPage();
 
     @Test
     @DisplayName("Проверка работы кнопки регистрации на главной странице")
@@ -40,6 +39,7 @@ public class MainPageTest extends TestBase{
     @DisplayName("Проверка работы калькулятора партнёрского вознаграждения")
     public void calculatorOfIncome() {
         calcPage.openCalculationPage();
+        calcPage.fillCalculatorOfIncome();
         calcPage.verifyCalculatorOfIncome();
     }
 
