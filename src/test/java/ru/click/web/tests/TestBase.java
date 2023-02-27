@@ -22,6 +22,7 @@ public class TestBase {
         WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
         new ProjectConfig().runConfig(config);
         Configuration.timeout = 10000;
+//        Configuration.pageLoadStrategy = "eager";
     }
 
     @BeforeEach

@@ -6,8 +6,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class ProjectConfig {
 
     public void runConfig(WebDriverConfig config) {
-        Configuration.baseUrl = config.getBaseUrl();
         Configuration.browser = config.getBrowser();
+        Configuration.baseUrl = config.getBaseUrl();
         Configuration.browserVersion = config.getBrowserVersion();
         Configuration.browserSize = config.getBrowserSize();
 
