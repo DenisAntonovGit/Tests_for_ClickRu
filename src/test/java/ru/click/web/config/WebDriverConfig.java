@@ -12,7 +12,6 @@ public interface WebDriverConfig extends Config {
     String getBaseUrl();
 
     @Key("browser")
-    @DefaultValue("chrome")
     String getBrowser();
 
     @Key("browser_version")
@@ -22,7 +21,6 @@ public interface WebDriverConfig extends Config {
     String getBrowserSize();
 
     @Key("remoteUrl")
-    @DefaultValue("https://user1:1234@selenoid.autotests.cloud/wd/hub")
     String getRemoteUrl();
 
     @Key("isRemote")
