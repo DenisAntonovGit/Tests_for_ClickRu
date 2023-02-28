@@ -4,7 +4,4 @@
 *.log
 *.class
 gradle/
-gradlew
-gradlew.bat
 \temp
-settings.gradle
