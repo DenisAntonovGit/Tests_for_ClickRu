@@ -21,8 +21,6 @@ public class TestBase {
 
     @BeforeAll
     static void beforeAll() {
-//        WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
-//        new ProjectConfig().runConfig(config);
         config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
         configuration = new ProjectConfig();
         configuration.runConfig(config);

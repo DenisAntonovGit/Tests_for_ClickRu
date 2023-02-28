@@ -25,4 +25,7 @@ public interface WebDriverConfig extends Config {
 
     @Key("isRemote")
     Boolean isRemote();
+
+    @Key("videoUrl")
+    String getVideoUrl();
 }
