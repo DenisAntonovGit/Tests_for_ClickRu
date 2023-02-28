@@ -11,7 +11,7 @@ public class ProjectConfig {
         Configuration.browserVersion = config.getBrowserVersion();
         Configuration.browserSize = config.getBrowserSize();
 
-        if (config.remote()) {
+        if (config.isRemote()) {
             Configuration.remote = config.getRemoteUrl();
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("enableVNC", true);

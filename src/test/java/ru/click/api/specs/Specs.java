@@ -4,6 +4,8 @@ import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import org.aeonbits.owner.ConfigFactory;
+import ru.click.web.config.AuthConfig;
 
 import static io.restassured.RestAssured.with;
 import static io.restassured.filter.log.LogDetail.BODY;
@@ -12,12 +14,11 @@ import static ru.click.api.helper.CustomApiListener.withCustomTemplates;
 
 public class Specs {
 
-    static String masterToken = "4e8eb3d6616c0ece9f6190c080619261";
-    static String user1Token = "4d9cd97882f0c4566cfc0aa364a05db9";
+    static AuthConfig tokens = ConfigFactory.create(AuthConfig.class);
 
     public static RequestSpecification request = with()
             .contentType("application/json")
-            .header("X-Auth-Token", masterToken)
+            .header("X-Auth-Token", tokens.getMasterToken())
             .baseUri("https://api.click.ru")
             .log().uri()
             .log().method()
@@ -25,7 +26,7 @@ public class Specs {
 
     public static RequestSpecification createRequest = with()
             .contentType(ContentType.JSON)
-            .header("X-Auth-Token", masterToken)
+            .header("X-Auth-Token", tokens.getMasterToken())
             .baseUri("https://api.click.ru")
             .log().uri()
             .log().method()
@@ -33,7 +34,7 @@ public class Specs {
 
     public static RequestSpecification userRequest = with()
             .contentType("application/json")
-            .header("X-Auth-Token", user1Token)
+            .header("X-Auth-Token", tokens.getUserToken())
             .baseUri("https://api.click.ru")
             .log().uri()
             .log().method()
@@ -44,6 +45,4 @@ public class Specs {
             .log(BODY)
             .expectStatusCode(200)
             .build();
-
-
 }

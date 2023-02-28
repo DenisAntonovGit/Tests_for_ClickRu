@@ -2,8 +2,10 @@ package ru.click.web.helpers;
 
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Attachment;
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import ru.click.web.config.WebDriverConfig;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -44,8 +46,9 @@ public class Attach {
     }
 
     public static URL getVideoUrl() {
-        String videoUrl = System.getProperty("remoteUrl", "https://user1:1234@selenoid.autotests.cloud") + "/video/" + sessionId() + ".mp4";
-// String videoUrl =
+        WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class);
+//        String videoUrl = System.getProperty("remoteUrl", "https://user1:1234@selenoid.autotests.cloud") + "/video/" + sessionId() + ".mp4";
+        String videoUrl = config.getRemoteUrl() + "/video/" + sessionId() + ".mp4";
         try {
             return new URL(videoUrl);
         } catch (MalformedURLException e) {

@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.*;
 import static ru.click.api.specs.Specs.*;
 
-public class SomeApiTest extends ApiTestData {
+public class ApiTests extends ApiTestData {
 
     Faker faker = new Faker(new Locale("en"));
     String groupName = faker.funnyName().toString();
@@ -108,6 +108,4 @@ public class SomeApiTest extends ApiTestData {
                 .statusCode(200);
     }
 }
-
-
 

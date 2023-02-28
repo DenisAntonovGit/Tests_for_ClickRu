@@ -16,13 +16,17 @@ import ru.click.web.page.MainPage;
 public class TestBase {
 
     protected final MainPage mainPage = new MainPage();
+    private static WebDriverConfig config;
+    private static ProjectConfig configuration;
 
     @BeforeAll
     static void beforeAll() {
-        WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
-        new ProjectConfig().runConfig(config);
-        Configuration.timeout = 10000;
-//        Configuration.pageLoadStrategy = "eager";
+//        WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
+//        new ProjectConfig().runConfig(config);
+        config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
+        configuration = new ProjectConfig();
+        configuration.runConfig(config);
+        Configuration.pageLoadStrategy = "eager";
     }
 
     @BeforeEach
