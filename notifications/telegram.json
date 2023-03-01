@@ -1,20 +1,17 @@
 {
-  "reportName": "Allure Report",
-  "testRuns": [],
-  "statistic": {
-    "failed": 0,
-    "broken": 0,
-    "skipped": 0,
-    "passed": 1,
-    "unknown": 0,
-    "total": 1
+  "base": {
+    "project": "Click.ru project",
+    "environment": "some env",
+    "comment": "tests for click.ru",
+    "reportLink": "",
+    "language": "en",
+    "messenger": "telegram",
+    "allureFolder": "allure-report/",
+    "enableChart": true
   },
-  "time": {
-    "start": 1673115851776,
-    "stop": 1673115899383,
-    "duration": 47607,
-    "minDuration": 47607,
-    "maxDuration": 47607,
-    "sumDuration": 47607
+  "telegram": {
+    "token": "5842559986:AAFWuBgEvFR4sKAcsL5LAiamdOTKp6qhBCA",
+    "chat": "-1001671333227",
+    "replyTo": ""
   }
 }
