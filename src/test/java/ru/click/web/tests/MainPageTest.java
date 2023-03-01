@@ -2,9 +2,11 @@ package ru.click.web.tests;
 
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.click.web.page.CalculationPage;
 
+@Tag("WEB UI")
 @Owner("antonovdenis")
 public class MainPageTest extends TestBase{
 
