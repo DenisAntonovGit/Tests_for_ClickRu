@@ -38,7 +38,7 @@
 - ✓ Проверка работы калькулятора экономии на главной странице.
 - ✓ Проверка работы калькулятора партнёрского вознаграждения.
 
-#API
+## API
 - ✓ Проверка получения списка всех USERS Master-аккаунта.
 - ✓ Проверка возможности создания нового USER.
 - ✓ Проверка получения инфорамции о Master-аккаунте.
@@ -50,7 +50,7 @@
 ## <img src="ProjectMedia/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins job
 <a target="_blank" href="https://jenkins.autotests.cloud/job/С16-Denis_Antonov_0_0-projectForClickRu/">Сборка в Jenkins</a>
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/С16-Denis_Antonov_0_0-projectForClickRu/"><img src="ProjectMedia/Jenkins_build.png" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/С16-Denis_Antonov_0_0-projectForClickRu/"><img src="ProjectMedia/Jenkins_mainpage_build.png" alt="Jenkins"/></a>
 </p>
 
 <a id="jenkins-build"></a>
