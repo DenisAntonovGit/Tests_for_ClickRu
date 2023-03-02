@@ -103,8 +103,16 @@ gradle clean test -Denv=remote
 <a id="allure-TestOps"></a>
 ## <img src="ProjectMedia/allureTestOps.svg" width="25" height="25"  alt="Allure TestOps"/></a> Интеграция с Allure TestOps
 
+### Окно с результатами запуска в Allure TestOps
+
 <p align="center">
-<img title="Allure TestOps" src="ProjectMedia/Telegram_notification.png">
+<img title="Allure TestOps" src="ProjectMedia/AllureTestOpsOverview.png">
+</p>
+
+### Детализация пройденных тестов в Allure TestOps
+
+<p align="center">
+<img title="Allure TestOps" src="ProjectMedia/AllureTestOpsTestCases.png">
 </p>
 
 <a id="telegram-notification"></a>
