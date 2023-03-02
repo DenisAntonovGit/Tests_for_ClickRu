@@ -23,9 +23,11 @@ public class MainPage {
     private final String economyAmountString = "Экономия:\n" + "50 000\n" + "₽";
 
 
-    @Step("Открываем главную страницу")
+
     public void openMainPage() {
-        open("https://click.ru");
+        step("Открываем главную страницу", () -> {
+            open("https://click.ru");
+        });
     }
 
     static void clickRegButton() {
