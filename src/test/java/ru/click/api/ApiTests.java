@@ -15,7 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.*;
 import static ru.click.api.specs.Specs.*;
 
-@Tag("API")
+
 @Owner("antonovdenis")
 public class ApiTests extends ApiTestData {
 
