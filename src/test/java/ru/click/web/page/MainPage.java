@@ -38,7 +38,7 @@ public class MainPage {
 
     public void checkRegistrationModal() {
         clickRegButton();
-        step("Проверям заголовки модального окна Регистрация", () -> {
+        step("Проверяем заголовки модального окна Регистрация", () -> {
             regModal.shouldHave(
                     text("Вход"),
                     text("Регистрация"),
@@ -51,7 +51,7 @@ public class MainPage {
         step("В модальном окне Регистрация, нажимаем на кнопку Демо", () -> {
             regModal.find(byText("Демо")).click();
         });
-        step("Проверям наличие кнопки Войти в Демо-аккаунт", () -> {
+        step("Проверяем наличие кнопки Войти в Демо-аккаунт", () -> {
             $("#auth-content-tab-demo").shouldHave(text("Войти в Демо-акккаунт"));
         });
     }
@@ -61,7 +61,7 @@ public class MainPage {
         step("В модальном окне Регистрация, нажимаем на кнопку Вход", () -> {
             regModal.find(byText("Вход")).click();
         });
-        step("Провреям наличие кнопки Войти в систему", () -> {
+        step("Проверяем наличие кнопки Войти в систему", () -> {
             $("#login-btn").shouldHave(Condition.value("Войти в систему"));
         });
     }
@@ -72,13 +72,13 @@ public class MainPage {
             costCounter.setValue("100");
             fraudCounter.setValue("10");
         });
-        step("Проверям значение в окне с результатом", () -> {
+        step("Проверяем значение в окне с результатом", () -> {
             economyAmount.shouldHave(text(economyAmountString));
         });
     }
 
     public void checkHeaderElements() {
-        step("Проверям наличие разделов главного меню", () -> {
+        step("Проверяем наличие разделов главного меню", () -> {
             header.shouldHave(
                     text("Возможности"),
                     text("Маркетплейс"),
@@ -89,7 +89,7 @@ public class MainPage {
     }
 
     public void checkFooterOptions() {
-        step("Проверям наличие разделов в футере страницы", () -> {
+        step("Проверяем наличие разделов в футере страницы", () -> {
             footer.shouldHave(
                     text("Обучение"),
                     text("Блог Click.ru"),
