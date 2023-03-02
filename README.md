@@ -8,6 +8,8 @@
 * <a href="#jenkins-build">Параметры сборки в Jenkins</a>
 * <a href="#terminal-run">Запуск тестов из терминала</a>
 * <a href="#allure-report">Allure отчет</a>
+* <a href="#allure-TestOps">Интеграция с Allure TestOps</a>
+* <a href="#jira">Интеграция с Jira TestOps</a>  
 * <a href="#telegram-notification">Отчет в Telegram</a>
 * <a href="#selenoid-video">Видео примеры прохождения тестов</a>
 
@@ -24,6 +26,10 @@
 <a href="https://aerokube.com/selenoid/"><img src="ProjectMedia/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>
 <a href="https://github.com/allure-framework/allure2"><img src="ProjectMedia/Allure_Report.svg" width="50" height="50"  alt="Allure"/></a>
 <a href="https://www.jenkins.io/"><img src="ProjectMedia/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
+<a href="https://qameta.io/"><img src="ProjectMedia/allureTestOps.svg" width="50" height="50"  alt="Allure TestOps"/></a>
+<a href="https://www.java.com"><img src="ProjectMedia/java-logo.svg" width="50" height="50"  alt="Java"/></a>
+<a href="https://www.atlassian.com/ru/software/jira"><img src="ProjectMedia/jira-logo.svg" width="50" height="50"  alt="Jira"/></a>
+<a href="https://rest-assured.io/"><img src="ProjectMedia/rest-assured-logo.svg" width="50" height="50"  alt="Rest-assured"/></a>
 </p>
 
 <a id="verifications"></a>
@@ -91,6 +97,14 @@ gradle clean test -Denv=remote
 
 <p align="center">
 <img title="Allure Graphics" src="ProjectMedia/Allure_report_grafics.png">
+</p>
+
+
+<a id="allure-TestOps"></a>
+## <img src="ProjectMedia/allureTestOps.svg" width="25" height="25"  alt="Allure TestOps"/></a> Интеграция с Allure TestOps
+
+<p align="center">
+<img title="Allure TestOps" src="ProjectMedia/Telegram_notification.png">
 </p>
 
 <a id="telegram-notification"></a>

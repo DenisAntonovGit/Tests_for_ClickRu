@@ -1,6 +1,8 @@
 package ru.click.web.tests;
 
+import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -15,18 +17,24 @@ public class MainPageTest extends TestBase{
 
     @Test
     @DisplayName("Проверка работы кнопки регистрации на главной странице")
+    @Feature("Модальное окно регистрации")
+    @Story("Навигация по главной странице")
     public void openRegistrationModal() {
         mainPage.checkRegistrationModal();
     }
 
     @Test
     @DisplayName("Проверка переключения на раздел Демо в модальном окне регистрации")
+    @Feature("Модальное окно регистрации")
+    @Story("Навигация по главной странице")
     public void switchToDemoOnRegistrationModal() {
         mainPage.switchToDemo();
     }
 
     @Test
     @DisplayName("Проверка переключения на раздел авторизации в модальном окне регистрации")
+    @Feature("Модальное окно регистрации")
+    @Story("Навигация по главной странице")
     public void switchToAutorizationOnRegistrationModal() {
         mainPage.switchToAutorization();
     }
@@ -35,12 +43,16 @@ public class MainPageTest extends TestBase{
 //    значений из полей ввода! TODO Зафиксировать в Jira
     @Test
     @DisplayName("Проверка работы калькулятора экономии на главной странице")
+    @Feature("Калькулятор экономии")
+    @Story("Работа с калькулятором главной страницы")
     public void verifyEffectiveOfClickingCalc() {
         mainPage.verifyMainPageCalc();
     }
 
     @Test
     @DisplayName("Проверка работы калькулятора партнёрского вознаграждения")
+    @Feature("Калькулятор партнёрского вознаграждения")
+    @Story("Работа с калькулятором партнёрского вознаграждения")
     public void calculatorOfIncome() {
         calcPage.openCalculationPage();
         calcPage.fillCalculatorOfIncome();
@@ -49,12 +61,16 @@ public class MainPageTest extends TestBase{
 
     @Test
     @DisplayName("Проверка элементов главного меню")
+    @Feature("Главное меню")
+    @Story("Навигация по главной странице")
     public void checkHeaderMenu() {
         mainPage.checkHeaderElements();
     }
 
     @Test
     @DisplayName("Проверка элементов в футере страницы")
+    @Feature("Меню футера страницы")
+    @Story("Навигация по главной странице")
     public void checkFooterOptions() {
         mainPage.checkFooterOptions();
     }

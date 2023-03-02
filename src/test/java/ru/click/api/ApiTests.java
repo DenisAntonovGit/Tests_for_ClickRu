@@ -1,7 +1,9 @@
 package ru.click.api;
 
 import com.github.javafaker.Faker;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -23,7 +25,9 @@ public class ApiTests extends ApiTestData {
     String groupName = faker.funnyName().toString();
 
     @Test
-    @DisplayName("Запрос для получение списка всех USERS Master-аккаунта")
+    @DisplayName("Запрос для получения списка всех USERS Master-аккаунта")
+    @Feature("Функциональность Master-аккаунта")
+    @Story("Работа с Master-аккаунтом")
     void getListOfUsers() {
         given(request)
                 .when()
@@ -34,6 +38,8 @@ public class ApiTests extends ApiTestData {
 
     @Test
     @DisplayName("Запрос на создание нового USER")
+    @Feature("Функциональность Master-аккаунта")
+    @Story("Работа с Master-аккаунтом")
     void createUser() {
         CreateManagerBodyModel body = new CreateManagerBodyModel();
         body.setDescription("Best User");
@@ -52,6 +58,8 @@ public class ApiTests extends ApiTestData {
 
     @Test
     @DisplayName("Запрос на получение инфорамции о Master-аккаунте")
+    @Feature("Функциональность Master-аккаунта")
+    @Story("Работа с Master-аккаунтом")
     void getMasterUserInfo() {
         MasterAccInfoBodyModel.MasterInfo masterInfo = given(request)
                 .when()
@@ -65,6 +73,8 @@ public class ApiTests extends ApiTestData {
 
     @Test
     @DisplayName("Получение списка созданных маркетинговых аккаунтов у конкретного пользователя USER №1")
+    @Feature("Функциональность USER-аккаунта")
+    @Story("Работа с USER-аккаунтом")
     void getMarketingsAccounts() {
         given(userRequest)
                 .when()
@@ -77,6 +87,8 @@ public class ApiTests extends ApiTestData {
 
     @Test
     @DisplayName("Запрос на создание группы маркетинговых аккаунтов у пользователя USER №1")
+    @Feature("Функциональность USER-аккаунта")
+    @Story("Работа с USER-аккаунтом")
     void createGroupOfAccounts() {
         CreateGroupBodyModel data = new CreateGroupBodyModel();
         ArrayList<Integer> myList = new ArrayList<>();
@@ -96,6 +108,8 @@ public class ApiTests extends ApiTestData {
 
     @Test
     @DisplayName("Запрос на создание и удаление группы маркетинговых аккаунтов у USER №1")
+    @Feature("Функциональность USER-аккаунта")
+    @Story("Работа с USER-аккаунтом")
     void DeletingGroup() {
         CreateGroupBodyModel data = new CreateGroupBodyModel();
         ArrayList<Integer> myList = new ArrayList<>();
