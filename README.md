@@ -10,6 +10,7 @@
 * <a href="#allure-report">Allure отчет</a>
 * <a href="#allure-TestOps">Интеграция с Allure TestOps</a>
 * <a href="#jira">Интеграция с Jira TestOps</a>  
+* <a href="#jira-игп">Пример оформленного бага в Jira</a>  
 * <a href="#telegram-notification">Отчет в Telegram</a>
 * <a href="#selenoid-video">Видео примеры прохождения тестов</a>
 
@@ -103,7 +104,7 @@ gradle clean test -Denv=remote
 <a id="allure-TestOps"></a>
 ## <img src="ProjectMedia/allureTestOps.svg" width="25" height="25"  alt="Allure TestOps"/></a> Интеграция с Allure TestOps
 
-### Окно с результатами запуска в Allure TestOps
+### Результаты запуска тестов в Allure TestOps
 
 <p align="center">
 <img title="Allure TestOps" src="ProjectMedia/AllureTestOpsOverview.png">
@@ -113,6 +114,20 @@ gradle clean test -Denv=remote
 
 <p align="center">
 <img title="Allure TestOps" src="ProjectMedia/AllureTestOpsTestCases.png">
+</p>
+
+<a id="jira"></a>
+## <img src="ProjectMedia/jira-logo.svg" width="25" height="25"  alt="Jira"/></a> Интеграция с Jira
+
+<p align="center">
+<img title="Jira" src="ProjectMedia/Jira_integration.png">
+</p>
+
+<a id="jira-bug"></a>
+## <img src="ProjectMedia/jira-logo.svg" width="25" height="25"  alt="Jira"/></a> Пример оформленного бага в Jira
+
+<p align="center">
+<img title="Jira-bug" src="ProjectMedia/Jira-bug.png">
 </p>
 
 <a id="telegram-notification"></a>
