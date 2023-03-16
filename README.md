@@ -1,4 +1,10 @@
 # Проект по автоматизации тестирования для Click.ru
+
+<p align="center">
+<img title="Click.ru" src="ProjectMedia/Click.ru_logo.png">
+</p>
+
+
 <a target="_blank" href="https://click.ru">Веб-сайт Click.ru</a>
 
 ## :scroll: Содержание:

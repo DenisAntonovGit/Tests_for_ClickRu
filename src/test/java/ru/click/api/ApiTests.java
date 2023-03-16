@@ -22,7 +22,7 @@ import static ru.click.api.specs.Specs.*;
 public class ApiTests extends ApiTestData {
 
     Faker faker = new Faker(new Locale("en"));
-    String groupName = faker.funnyName().toString();
+    String groupName = faker.name().lastName();
 
     @Test
     @DisplayName("Запрос для получения списка всех USERS Master-аккаунта")
